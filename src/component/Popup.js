@@ -2,12 +2,13 @@ import React from 'react';
 import Navbar from '../component/Navbar.js';
 
 function Popup(){
- 
+  const [hidden, setHidden] = useState(false);
+
 return(
 <>
     <div className="popup-wrapper">
   <Navbar/>
-    <div className="popup-container">
+    <div className="popup-container" hidden={hidden}>
     <p>Enter your email to see your photos and videos</p>
     <form>
 <div className="text-input-div">
@@ -20,7 +21,7 @@ return(
 <label for="terms"> I accept the <strong>TCU</strong></label>
 
 </div>
-    <button>submit</button>    
+    <button onClick={() => setHidden(!hidden)}>submit</button>    
         
     </form> 
     </div>    
