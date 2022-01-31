@@ -3,6 +3,7 @@ import Navbar from '../component/Navbar.js';
 
 function Popup(){
   const [hidden, setHidden] = useState(false);
+
 return(
 <>
     <div className="popup-wrapper">
@@ -20,7 +21,7 @@ return(
 <label for="terms"> I accept the <strong>TCU</strong></label>
 
 </div>
-<button onClick={() => setHidden(!hidden)}>submit</button>    
+    <button onClick={() => setHidden(!hidden)}>submit</button>    
         
     </form> 
     </div>    
