@@ -80,7 +80,7 @@ float:right;
   right: 0;
 }
 .image-gallery-wrapper{
-display: block !important;
+display: none;
 }
 .image-gallery-inner-wrapper h2{
   font-size: 24px;
