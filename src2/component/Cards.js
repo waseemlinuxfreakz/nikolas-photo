@@ -10,18 +10,12 @@ function Cards(props) {
   const [show, setShow] = useState(false);
 
   
-  const handleClick = (e) => {
-    //handleClick(e) {
-      e.preventDefault()
-      console.log(e.target.getAttribute('data-id'));
-      alert(e.target.getAttribute('data-id'));
-    }
-   console.log(props); 
+  
+
   
   return (
-    
     <div className="col-sm-4">
-    <img src={props.image} alt="waseem" data-id={props.index} class="open-gallary" onClick={handleClick}/>
+    <img src={props.image} alt=""/>
     
       <div onClick={() => setShow(true)} className="image-click"></div>
     

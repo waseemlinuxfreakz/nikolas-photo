@@ -1,32 +1,62 @@
 import {React,useState} from 'react';
 import Navbar from '../component/Navbar.js';
+import ImageGallery from '../component/ImageGallery';
 
 function Popup(){
-  const [hidden, setHidden] = useState(false);
+  
+  
+  
+  /*const [textInputName, setTextInputName] = useState('');*/
+  const [textInputEmail, setTextInputEmail] = useState('');
+ 
+  const checkTextInput = () => {
+    
+    
+    const user_email_list = document.getElementById('user_email_list').value;
+    if(user_email_list!=""){
+  
+      var element = document.getElementById('user_list_video');
+      element.classList.add('hidden');
+      var content_elment_lift = document.getElementById('main_content_modify');
+      content_elment_lift.classList.add('active');
+
+    }
+    else{
+
+      var elements = document.getElementById('user_list_video');
+      elements.classList.remove('hidden');
+      var content_elment_lifts = document.getElementById('main_content_modify');
+      content_elment_lifts.classList.remove('active');
+    
+    }
+    
+  };
+  
 return(
 <>
     <div className="popup-wrapper">
   <Navbar/>
-    <div className="popup-container" hidden={hidden}>
+    <div className="popup-container" id="user_list_video">
     <p>Enter your email to see your photos and videos</p>
     <form>
 <div className="text-input-div">
-<input type="text" placeholder="youremail@email.com"/>
+<input type="text" placeholder="youremail@email.com" id="user_email_list"/>
 <a href="#">Reset</a>
 </div>    
 <div className="check-box-div">
 
-<input type="checkbox" name="terms" />
+<input type="checkbox" name="termsbox" />
 <label for="terms"> I accept the <strong>TCU</strong></label>
 
 </div>
-<button onClick={() => setHidden(!hidden)}>submit</button>    
+<button onClick={checkTextInput} type="button">submit</button>    
         
     </form> 
     </div>    
         
 
     </div>
+    <ImageGallery/>
 </>
 )
 
