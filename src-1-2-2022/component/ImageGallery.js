@@ -5,38 +5,7 @@ import { useState } from 'react';
 
 
 function ImageGallery(){
-    const usersObject_gal = [
-        {
-            id: 'img-1',
-            userAvatar: image_3,
-            class_txt: ""
-        },
-        {
-          id: 'img-2',
-          userAvatar: image_3,
-          class_txt: ""
-      },
-      {
-        id: 'img-3',
-        userAvatar: image_3,
-        class_txt: ""
-      },
-      {
-        id: 'img-4',
-        userAvatar: image_3,
-        class_txt: ""
-      },
-      {
-        id: 'img-5',
-        userAvatar: image_3,
-        class_txt: ""
-      },
-      ]
-      
-      const [users_gal, setUsers_gal] = useState({
-        activeMark: null,
-        allUsers: usersObject_gal
-      });
+
   
      
 
@@ -45,7 +14,7 @@ return(
 <>
 <div className="image-gallery-wrapper">
 
-
+<Navbar/>
 <div className="container">
 <div className="image-gallery-inner-wrapper">
 <h2>Click to modify</h2>

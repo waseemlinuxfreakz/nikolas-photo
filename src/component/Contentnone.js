@@ -2,16 +2,15 @@ import {React,useState} from 'react';
 
 import image_1 from '../images/image-1.jpg';
 import image_2 from '../images/image-2.jpg';
-import vector_3 from '../images/Vector-3.png';
-import vector_4 from '../images/Vector-4.png';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes , faDownload } from "@fortawesome/free-solid-svg-icons";
 
 
 
 
-function Content() {
-  const [show, setShow] = useState(false);
+function Contentnone() {
+  
   const handleClick = (e) => {
     //handleClick(e) {
     e.preventDefault()
@@ -65,28 +64,22 @@ const toggleCheckMark = (index) => {
 
     return (
     <>
-     <div className="main-content modify_hidden">
+     <div className="main-content" id="main_content_modify">
      <div className="container">
-      <h1>Click to modify</h1>
-
-       <ul className="share-list">
-       <li><a href="#"><img src={vector_3}alt=""/><span>Share</span></a></li>
-       <li><a href="#"><img src={vector_4}alt=""/><span>Email</span></a></li>
-
-       </ul>
+      <h1>Select Any Photo or Video and Modify</h1>
 
      <div className="row">
      {users.allUsers.map((user, index) => (
      <div className="col-sm-4 col-4">
-     <img src={user.userAvatar} alt="waseem" data-id={user.id} class="open-gallary" onClick={handleClick}/>
+     <img src={user.userAvatar} alt="waseem" data-id={'popupg-'+user.id} class="open-gallary" onClick={handleClick}/>
  
-     <div onClick={() => toggleCheck(index)} key={index} className="image-click"></div>
-     {toggleCheckMark(index) && (<div className="close-and-download-btn-wrapper">
+     <div data-id={'img-'+index} className="image-click"></div>
+     <div id={'img-'+index} className="close-and-download-btn-wrapper hidden">
        <ul>
-         <li><FontAwesomeIcon icon={faDownload}/></li>
-         <li onClick={() => setShow(false)}><FontAwesomeIcon icon={faTimes}/></li>
+         <li><FontAwesomeIcon icon={faDownload} /></li>
+         <li ><FontAwesomeIcon icon={faTimes}/></li>
        </ul>
-     </div>)}
+     </div>
    </div>
      ))}
       
@@ -98,4 +91,4 @@ const toggleCheckMark = (index) => {
     );
   }
   
-  export default Content;
+  export default Contentnone;

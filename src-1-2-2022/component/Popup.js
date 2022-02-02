@@ -1,4 +1,4 @@
-import {React} from 'react';
+import {React,useState} from 'react';
 import Navbar from '../component/Navbar.js';
 import ImageGallery from '../component/ImageGallery';
 
@@ -7,13 +7,13 @@ function Popup(){
   
   
   /*const [textInputName, setTextInputName] = useState('');*/
-  /*const [textInputEmail, setTextInputEmail] = useState('');*/
+  const [textInputEmail, setTextInputEmail] = useState('');
  
   const checkTextInput = () => {
     
     
     const user_email_list = document.getElementById('user_email_list').value;
-    if(user_email_list!==""){
+    if(user_email_list!=""){
   
       var element = document.getElementById('user_list_video');
       element.classList.add('hidden');
@@ -27,7 +27,7 @@ function Popup(){
       elements.classList.remove('hidden');
       var content_elment_lifts = document.getElementById('main_content_modify');
       content_elment_lifts.classList.remove('active');
-      alert("Please Fill Email address");
+    
     }
     
   };
