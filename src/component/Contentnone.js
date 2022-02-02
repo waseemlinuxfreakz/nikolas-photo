@@ -15,7 +15,7 @@ function Contentnone() {
     //handleClick(e) {
     e.preventDefault()
     console.log(e.target.getAttribute('data-id'));
-    alert(e.target.getAttribute('data-id'));
+    //alert(e.target.getAttribute('data-id'));
     var active_id = e.target.getAttribute('data-id');
     var element_galp = document.getElementById('gallery_list');
     element_galp.classList.add('active');
