@@ -1,6 +1,6 @@
 import {React} from 'react';
 import Navbar from '../component/Navbar.js';
-
+import ImageGallery from '../component/ImageGallery';
 
 function Popup(){
   
@@ -56,7 +56,7 @@ return(
         
 
     </div>
-    
+    <ImageGallery/>
 </>
 )
 

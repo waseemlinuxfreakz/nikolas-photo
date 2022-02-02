@@ -573,17 +573,3 @@ span#filterArrowRight {
 div.close-and-download-btn-wrapper.hidden {
   display: none;
 }
-figure.gallery-main-image {
-  display: none;
-}
-figure.gallery-main-image.active-gal {
-  display: block !important;
-}
-.image-gallery-wrapper.active {
-  z-index: 99999999999;
-  position: relative;
-  display: block;
-}
-div.main-content.hidden {
-  display: none;
-}
