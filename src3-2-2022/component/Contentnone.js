@@ -77,10 +77,11 @@ const toggleCheckMark = (index) => {
      <div className="main-content" id="main_content_modify">
       <div className="container">
         <h1>Select Any Photo or Video and Modify</h1>
-        <div className="row card_row">
+        <div className="row">
           {users.allUsers.map((user, index) => (
             <div className="col-sm-4 col-4">
-              <div className="cardImage"><img src={user.userAvatar} alt="waseem" data-id={'popupg-'+user.id} class="open-gallary" onClick={handleClick}/></div>
+              <img src={user.userAvatar} alt="waseem" data-id={'popupg-'+user.id} class="open-gallary" onClick={handleClick}/>
+ 
               <div data-id={'img-'+index} className="image-click"></div>
                 <div id={'img-'+index} className="close-and-download-btn-wrapper hidden">
                   <ul>

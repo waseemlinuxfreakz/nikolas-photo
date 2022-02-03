@@ -1,6 +1,6 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './component/Navbar.js';
 import Contentnone from './component/Contentnone';
 import Content from './component/Content.js';
