@@ -4,11 +4,12 @@ import logo from '../logo.png';
 
 function Navbar() {
     return (
-    
-   
-<header><div className="container">
-  <a href="/"><img src={logo} alt="logo"/></a>
-  </div></header>     
+
+    <header className='main_header'>
+      <div className="container">
+        <a href="/" className='logo'><img src={logo} alt="logo"/></a>
+      </div>
+    </header>     
   
     );
   }

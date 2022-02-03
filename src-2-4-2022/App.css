@@ -7,6 +7,10 @@ body {
 	max-width: 1170px;
 }
 
+header {
+	padding-top: 30px;
+}
+
 .main-content {
 	margin-top: 80px;
 	padding-bottom: 50px;
@@ -651,12 +655,6 @@ figure.gallery-main-image img {
   flex-wrap: nowrap;
 }
 
-header.main_header {
-  position: relative;
-  z-index: 999999999999999999999999999999999;
-  background: #fff;
-  padding: 15px 0 25px 0;
-}
 
 @media(max-width:991px) {
 	.filterOpt {
@@ -710,19 +708,6 @@ header.main_header {
 }
 
 @media(max-width:480px) {
-
-  .image-gallery-inner-wrapper .col-sm-2 h3 {
-      min-height: 34px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-  }
-
-  a.logo img {
-      width: 110px;
-  }
-
 	.filterOpt {
 		font-size: 14px;
 		padding: 0 4px;

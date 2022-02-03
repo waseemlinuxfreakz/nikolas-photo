@@ -35,6 +35,7 @@ function Popup(){
 return(
 <>
     <div className="popup-wrapper">
+  <Navbar/>
     <div className="popup-container" id="user_list_video">
     <p>Enter your email to see your photos and videos</p>
     <form>
