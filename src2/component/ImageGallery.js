@@ -38,13 +38,7 @@ function ImageGallery(){
         allUsers_list: usersObject_gal
       });
   
-      const checkTextInput_gal = () => {
-        var modify_hidden_ap_ele = document.getElementById("modify_hidden_ap");
-        modify_hidden_ap_ele.classList.remove('modify_hidden');
-        var content_hidden_ap_ele = document.getElementById("gallery_list");
-        content_hidden_ap_ele.classList.remove('active');
-        modify_hidden_ap_ele.classList.add('active');
-      }
+     
 
    
 return(
@@ -69,7 +63,7 @@ return(
 <div className="col-sm-2"><h3>Street</h3><figure className="filter_img street"><img src={image_3} alt=""/></figure></div>
 </div>
 
-<button type="button" onClick={checkTextInput_gal}>OK</button>
+<button>OK</button>
 
 </div>
 

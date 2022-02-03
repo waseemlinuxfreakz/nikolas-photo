@@ -65,7 +65,7 @@ const toggleCheckMark = (index) => {
 
     return (
     <>
-     <div className="main-content modify_hidden" id="modify_hidden_ap">
+     <div className="main-content modify_hidden">
      <div className="container">
       <h1>Click to modify</h1>
 
