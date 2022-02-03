@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nikolas-photo/static/css/main.309bc84b.css",
-    "main.js": "/nikolas-photo/static/js/main.b242b0f1.js",
+    "main.css": "/nikolas-photo/static/css/main.c82ce751.css",
+    "main.js": "/nikolas-photo/static/js/main.fe303f7f.js",
     "static/js/787.6200b91a.chunk.js": "/nikolas-photo/static/js/787.6200b91a.chunk.js",
     "static/media/video.png": "/nikolas-photo/static/media/video.f8c94dbf82ed1eab388d.png",
     "static/media/filter_image.png": "/nikolas-photo/static/media/filter_image.efcd5ff3b674dec45576.png",
@@ -11,12 +11,12 @@
     "static/media/image-1.jpg": "/nikolas-photo/static/media/image-1.cf39776ea7645d2a469b.jpg",
     "index.html": "/nikolas-photo/index.html",
     "static/media/video_play.svg": "/nikolas-photo/static/media/video_play.cea760c2c4794c0fd49d02acd8bf0f58.svg",
-    "main.309bc84b.css.map": "/nikolas-photo/static/css/main.309bc84b.css.map",
-    "main.b242b0f1.js.map": "/nikolas-photo/static/js/main.b242b0f1.js.map",
+    "main.c82ce751.css.map": "/nikolas-photo/static/css/main.c82ce751.css.map",
+    "main.fe303f7f.js.map": "/nikolas-photo/static/js/main.fe303f7f.js.map",
     "787.6200b91a.chunk.js.map": "/nikolas-photo/static/js/787.6200b91a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.309bc84b.css",
-    "static/js/main.b242b0f1.js"
+    "static/css/main.c82ce751.css",
+    "static/js/main.fe303f7f.js"
   ]
 }
