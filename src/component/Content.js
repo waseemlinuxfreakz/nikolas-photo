@@ -75,22 +75,20 @@ const toggleCheckMark = (index) => {
 
        </ul>
 
-     <div className="row">
-     {users.allUsers.map((user, index) => (
-     <div className="col-sm-4 col-4">
-     <img src={user.userAvatar} alt="waseem" data-id={user.id} class="open-gallary" onClick={handleClick}/>
- 
-     <div onClick={() => toggleCheck(index)} key={index} className="image-click"></div>
-     {toggleCheckMark(index) && (<div className="close-and-download-btn-wrapper">
-       <ul>
-         <li><FontAwesomeIcon icon={faDownload}/></li>
-         <li onClick={() => setShow(false)}><FontAwesomeIcon icon={faTimes}/></li>
-       </ul>
-     </div>)}
-   </div>
-     ))}
-      
-     </div>
+       <div className="row card_row">
+          {users.allUsers.map((user, index) => (
+            <div className="col-sm-4 col-4">
+              <div className="cardImage"><img src={user.userAvatar} alt="waseem" data-id={'popupg-'+user.id} class="open-gallary" onClick={handleClick}/></div>
+              <div data-id={'img-'+index} className="image-click"></div>
+                <div id={'img-'+index} className="close-and-download-btn-wrapper hidden">
+                  <ul>
+                    <li><FontAwesomeIcon icon={faDownload} /></li>
+                    <li ><FontAwesomeIcon icon={faTimes}/></li>
+                  </ul>
+                </div>
+              </div>
+          ))}
+      </div>
     </div>
     </div> 
    </>
