@@ -710,7 +710,7 @@ header.main_header {
 }
 
 @media(max-width:480px) {
-
+	
   .image-gallery-inner-wrapper .col-sm-2 h3 {
       min-height: 34px;
       display: flex;
@@ -735,5 +735,12 @@ header.main_header {
   width: 20px;
   height: 20px;
 }
+.cardImage {
+	padding-bottom: 10%;
+	height: 170px;
+}
 
+.cardImage> img {
+	height: 170px;
+}
 }
