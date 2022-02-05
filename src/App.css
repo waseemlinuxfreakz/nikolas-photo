@@ -434,6 +434,32 @@ li::marker {
 	justify-content: space-between;
 }
 
+.dummySepiaFilter {
+	filter: sepia(45%);
+  }
+  
+  .dummyFairFilter {
+	filter: brightness(135%);
+  }
+  
+  .dummyDarkFilter {
+	filter: brightness(50%) contrast(85%) blur(40%);
+  
+  }
+  
+  .dummyBlurFilter {
+	filter: blur(25);
+  
+  }
+  .dummySaturateFilter {
+	filter: saturate(120%);
+  
+  }
+  .dummyBWFilter {
+	filter: grayscale(100%);
+  
+  }
+
 button.filterbtn {
 	display: block;
 	border: 0;
@@ -743,4 +769,29 @@ header.main_header {
 .cardImage> img {
 	height: 170px;
 }
+}
+.makeStyles-copyContainer-5 {
+	display: none;
+  }
+  .makeStyles-copyContainer-5 {
+	display: none !important;
+  }
+  .makeStyles-iconContainer-3 {
+	text-align: right !important;
+	padding-top: 20px !important;
+	padding-bottom: 15px !important;
+	position: relative !important;
+	left: 20% !important;
+  }
+  .filter_imge_wrap {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.filter_imge_wrap img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
 }
